@@ -1,0 +1,30 @@
+/* LANDING PAGE */
+.landing {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: url(../img/bgImg.jpg);
+  background-size: 100%;
+}
+
+
+/* SPRITE ANIMATION */
+.sprite {
+  background-color: black;
+  /* background-image: url(); */
+}
+.mushroom {
+  width: 200px;
+  height: 300px;
+  background-image: url(../img/mushroomSprite.png);
+  background-repeat: repeat;
+  background-position: left center;
+  animation: play 1s steps(9) infinite;
+
+
+}
+@keyframes play {
+  100% {
+    background-position: -1800px;
+  }
+}
