@@ -1,17 +1,116 @@
+@font-face {
+    font-family: 'cinzel_decorativebold';
+    src: url('cinzeldecorative-bold-webfont.woff2') format('woff2'),
+         url('cinzeldecorative-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cinzel_decorativeregular';
+    src: url('cinzeldecorative-regular-webfont.woff2') format('woff2'),
+         url('cinzeldecorative-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'reswysokrregular';
+    src: url('reswysokr-webfont.woff2') format('woff2'),
+         url('reswysokr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* LANDING PAGE */
 .landing {
   height: 100vh;
   width: 100%;
   margin: 0;
-  background: url(../img/bgImg.jpg);
+  background: url(../img/bgIndexWeb.jpg);
   background-size: 100%;
+  overflow: hidden;
+}
+.title {
+  position: relative;
+  top: 20%;
+}
+h1, h2 {
+  color: white;
+  text-align: center;
+  font-family: 'cinzel_decorativeregular', Arial, sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 20px;
+  height: 100px;
+  overflow: visible;
+}
+span {
+  line-height: 100px;
+  display: block;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  top: 30%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  background-color:black;
+  opacity: .7;
+  padding: 10px 50px; /*height then width*/
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+  float: left;
+  width: 200px;
+  margin-right: 4px;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.entry {
+  font-family: 'reswysokrregular';
+  color: white;
+  font-size: 24px;
+  letter-spacing: 3px;
 }
 
+/* NAV BARS */
+.button {
+  background-color: inherit;
+}
+#offCanvas {
+  padding-top: 10px;
+}
+.button:hover, .button:active {
+  background-color: inherit;
+  color: black;
+  opacity: 0.7;
+}
+.menu a {
+  color: black;
+  font-family: 'reswysokrregular';
+  font-size: 30px;
+  opacity: 0.9;
+}
+.menu a:hover, .menu a:focus {
+  text-decoration: none;
+  font-weight: bolder;
+  color: inherit;
+}
+.menu a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* SPRITE ANIMATION */
 .sprite {
-  background-color: black;
-  /* background-image: url(); */
+  background-image: url(../img/spriteBGWeb.jpg);
 }
 .mushroom {
   width: 200px;
@@ -20,7 +119,11 @@
   background-repeat: repeat;
   background-position: left center;
   animation: play 1s steps(9) infinite;
-
+  left: 50%;
+  top: 20%;
+  position: relative;
+  margin-left: -60px;
+  margin-top: 50px;
 
 }
 @keyframes play {
@@ -28,3 +131,5 @@
     background-position: -1800px;
   }
 }
+
+/* KEYFRAME ANIMATION */
