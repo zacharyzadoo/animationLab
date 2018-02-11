@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Transform Animation</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/fonts/stylesheet.css" type="text/css" charset="utf-8" />
     <script src="https://use.fontawesome.com/966b625629.js"></script> <!--FONT AWESOME -->
   </head>
-  <body>
+  <body class="trans">
     <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
       <ul class="menu vertical">
         <li><a href="sprite.html">Sprite Animation</a></li>
-        <li><a href="keyframe.html" class="active">Keyframe Animation</a></li>
+        <li><a href="keyframe.html" class="active">Transform Animation</a></li>
         <li><a href="transition.html">Transition Animation</a></li>
         <li><a href="#">Contact Me</a></li>
       </ul>
@@ -22,10 +22,16 @@
     <div class="off-canvas-content" data-off-canvas-content>
       <button type="button" class="button" data-toggle="offCanvas"><i class="fa fa-bars fa-4x"></i></button>
       <div class="title">
-        <h1><span>Keyframe</span></h1>
+        <h1><span>Transform</span></h1>
         <h2><span>Animation</span></h2>
       </div>
-      <div class="mushroom"></div>
+      <div class="message">
+        <p>Click on the ball!</p>
+      </div>
+      <div id="ballComp">
+        <div id="ball"></div>
+        <div id="ballShadow"></div>
+      </div>
     </div>
 
 
