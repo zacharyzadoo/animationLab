@@ -165,7 +165,7 @@ span {
   width: 140px;
   height: 140px;
   border-radius: 70px;
-  background: linear-gradient(to top, rgba(187, 187, 187, 1), rgba(119, 119, 119, 1));
+  background: linear-gradient(to top, rgba(207, 83, 0, 1), rgba(250, 131, 32, 1));
   box-shadow: inset 0 -5px 20px rgba(255, 255, 255, 0.4), inset -4px -1px 40px rgba(0, 0, 0, 0.4), 0 0 1px #000;
   position: absolute;
 	top: 0;
@@ -192,8 +192,8 @@ span {
 	margin-left: -30px;
 	width: 60px;
 	height: 75px;
-	background: rgba(20, 20, 20, .1);
-	box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+	background: rgba(20, 20, 20, .3);
+	box-shadow: 0px 0 20px 35px rgba(20,20,20,.5);
 	border-radius: 30px / 40px;
 	transform: scaleY(.3);
 	animation: shrink 1s infinite;
@@ -277,4 +277,50 @@ span {
 		border-radius: 30px / 40px;
 		animation-timing-function: ease-in;
 	}
+}
+
+/* TRANSITION ANIMATION */
+.transition {
+  background-image: url(../img/transitionBGWeb.jpg);
+  background-size: 100%;
+}
+.first {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  border-radius: 25%;
+}
+.second {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  border-radius: 25%;
+  animation: spin 5s linear infinite;
+}
+.third {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 250px;
+  height: 250px;
+  border: 10px solid white;
+  border-radius: 25%;
+  animation: spin2 5s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes spin2 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
